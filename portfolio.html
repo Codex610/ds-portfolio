@@ -1825,9 +1825,24 @@
   ];
 
   // ── ADMIN ──
+  const ADMIN_PASS = 'raJnish@#123';
+  let adminUnlocked = false;
+
   function openAdmin() {
-    document.getElementById('admin-overlay').classList.add('active');
-    loadAdminData();
+    if (adminUnlocked) {
+      document.getElementById('admin-overlay').classList.add('active');
+      loadAdminData();
+      return;
+    }
+    const input = prompt('🔒 Enter admin password:');
+    if (input === null) return; // cancelled
+    if (input === ADMIN_PASS) {
+      adminUnlocked = true;
+      document.getElementById('admin-overlay').classList.add('active');
+      loadAdminData();
+    } else {
+      alert('❌ Incorrect password. Access denied.');
+    }
   }
 
   function closeAdmin() {
