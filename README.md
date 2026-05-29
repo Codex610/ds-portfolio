@@ -101,7 +101,7 @@ Your portfolio is live at: `https://Codex610.github.io`
 ### Option 2: Netlify Drop (Easiest — No Account Needed)
 
 1. Go to **https://app.netlify.com/drop**
-2. Drag and drop your `portfolio.html` + `best_DS_resume.pdf` folder
+2. Drag and drop your `portfolio.html` + `Best-DS.pdf` folder
 3. Done — you get a live URL instantly like `https://abc123.netlify.app`
 
 To keep it permanently: create a free Netlify account and claim the site.
